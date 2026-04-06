@@ -1,0 +1,40 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    color:red;
+    font-family:"Meiryo", "Times New Roman", Times, serif, "YuMincho";
+}
+
+h1::before{
+    content:"○";
+}
+
+h2::before{
+    content:"●";
+}
+
+#dif, #qty{
+    color:blue;
+    font-family: "Times New Roman", Times, serif, "YuMincho";
+    font-size: 2.4rem;
+}
+
+a:hover{
+    color:purple;
+    font-weight: bold;
+}
+
+table, th, td{
+    border:0.1rem solid#333;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1.0rem; /* セル内の余白 */
+}

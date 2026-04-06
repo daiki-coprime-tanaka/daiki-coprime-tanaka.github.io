@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>計算トレーニング  本体</title>
+        <link rel="stylesheet" href="Calc.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <script src="Calc.js">
+            // window.onload = LoadF;
+        </script>
+    <header></header>
+    <main>
+        <p>問題数 : <span id="qty"></span></p>
+        <p>難易度 : <span id="dif"></span></p>
+        <p>以上の設定で開始します. よろしければ「開始」を押して下さい.</p>
+        <button onclick="LoadF()">開始</button>
+        <p><span class="que">(<span id="no"></span>)</span>    <span id="a", class="que"></span>  <span id="op", class="que"></span>  <span id="b", class="que"></span>  <span class="que">=</span>  <input type="text", value="", id="ans", onchange="test()">        <button onclick="wrong()">次の問題へ</button></p>
+        <p>テキストボックスの外をクリックするか, Enterキーを押すと答えを確定します.</p>
+        <p>「次の問題へ」ボタンを押すと, 表示されている問題への解答を諦め, 次の問題へ移ります.</p>
+        <p><span id="help"></span></p>
+    </main>
+    <footer>
+        <p><a href="./Settings.html">もう一度</a></p>
+        <p><a href="../Home.html">ホーム画面へ</a></p>
+    </footer>
+    </body>
+</html>

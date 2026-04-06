@@ -1,0 +1,31 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    color:red;
+    font-family:"Meiryo", "Times New Roman", Times, serif, "YuMincho";
+}
+
+#dif, #qty{
+    color:blue;
+    font-family: "Times New Roman", Times, serif, "YuMincho";
+    font-size: 2.4rem;
+}
+
+.que{
+    font-size:2.0rem;
+}
+
+#ans{
+    font-size:2.0rem;
+}
+
+a:hover{
+    color:purple;
+    font-weight: bold;
+}
