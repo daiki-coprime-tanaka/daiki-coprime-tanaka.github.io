@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>計算トレーニング  設定</title>
+        <link rel="stylesheet" href="Settings.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <script src="Settings.js"></script>
+    <header>
+        <a onclick="Start()", href="./Calc.html">開始する</a>
+    </header>
+    <main>
+        <h1>問題数</h1>
+            <p>出題する問題の数です.</p>
+            <input type="text", id="qty", value="10">
+        <h1>難易度</h1>
+            <p>数字が大きいほど問題に現れる数が大きくなります. そのため, 問題が難しくなる傾向にあります.</p>
+            <input type="text", id="dif", value="10">
+        <h2>難易度の目安</h2>
+        <table>
+            <tr>
+                <th>  </th>
+                <th>難易度</th>
+                <th>主に出題される形式</th>
+            </tr>
+            <tr>
+                <td>簡単</td>
+                <td>1～10</td>
+                <td>1桁±1桁, 1桁×1桁, 2桁÷1桁</td>
+            </tr>
+            <tr>
+                <td>普通</td>
+                <td>11～100</td>
+                <td>2桁±2桁, 2桁×2桁, 4桁÷2桁</td>
+            </tr>
+            <tr>
+                <td>難しい</td>
+                <td>101～1000</td>
+                <td>3桁±3桁, 3桁×3桁, 6桁÷3桁</td>
+            </tr>
+        </table>
+    </main>
+    <footer></footer>
+    </body>
+</html>
