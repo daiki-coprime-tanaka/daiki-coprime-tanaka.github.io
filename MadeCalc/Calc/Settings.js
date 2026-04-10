@@ -1,6 +1,7 @@
 function Start() {
     const qty = document.getElementById("qty").value;
     const dif = document.getElementById("dif").value;
+    alert("q+2 = " + qty + 2);
     if(Number(qty) <= 0) {
         alert("問題数は1以上の整数を入力してください");
         sessionStorage.setItem('qty', "10");
