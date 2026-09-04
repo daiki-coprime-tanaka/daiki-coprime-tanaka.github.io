@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>計算トレーニング  本体</title>
+        <link rel="stylesheet" href="CalcII.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body onload="LoadF()">
+        <script src="CalcII.js">
+            // window.onload = LoadF;
+        </script>
+    <header>
+        <h1>計算トレーニング  本体</h1>
+    </header>
+    <main>
+        <p>問題数 : <span id="qty"></span></p>
+        <p>難易度 : <span id="dif"></span></p>
+        <!--<p>以上の設定で開始します. よろしければ「開始」を押して下さい.</p>
+        <button onclick="LoadF()">開始</button>-->
+        <p><span class="que"><span id="cnt"></span></span>問中の<span class="que"><span id="no"></span></span>問目</p>
+        <p><span id="a", class="que"></span>  <span id="op", class="que"></span>  <span id="b", class="que"></span>  <span class="que">=</span>  <input type="text", value="", id="ans", onchange="test()">        <button class="playAgain" onclick="wrong()">次の問題へ</button></p>
+        <p>テキストボックスの外をクリックするか, Enterキーを押すと答えを確定します.</p>
+        <p>「次の問題へ」ボタンを押すと, 表示されている問題への解答を諦め, 次の問題へ移ります.</p>
+        <p><span id="help"></span></p>
+    </main>
+    <footer>
+        <p><button class="backTo" onclick="location.href='../Home.html'">ホーム画面へ戻る</button>
+        <button class="backTo" onclick="location.href='./SettingsII.html'">設定を変更する</button>
+        <button class="playAgain" onclick="LoadF()">もう一度プレイする</button></p>
+        <!--<p><a href="./SettingsII.html">もう一度</a></p>-->
+        <!--<p><a href="../Home.html">ホーム画面へ</a></p>-->
+    </footer>
+    </body>
+</html>

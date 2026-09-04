@@ -1,0 +1,56 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 3.2rem;
+}
+
+h1 {
+    color:#ff007b;
+    font-family:"Meiryo", "Times New Roman", Times, serif, "YuMincho";
+}
+
+#dif, #qty, #cnt{
+    color:#007bff;
+    font-family: "Times New Roman", Times, serif, "YuMincho";
+    font-size: 4.8rem;
+}
+
+.que{
+    font-family: "Times New Roman", Times, serif, "YuMincho";
+    font-size:4.8rem;
+}
+
+#ans{
+    font-size:4.8rem;
+    margin-left:20px;
+}
+
+a:hover{
+    color:purple;
+    font-weight: bold;
+}
+
+.playAgain{
+    background-color: #007bff; /* 青色 */
+    color: white;              /* 文字を白に */
+    border: none;              /* 枠線なし */
+    padding: 10px 20px;        /* 余白を調整 */
+    border-radius: 5px;        /* 角を丸く */
+    cursor: pointer;           /* ポインター表示 */
+    font-size: 2.4rem;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.backTo{
+    background-color: #ff007b; /* 青色 */
+    color: white;              /* 文字を白に */
+    border: none;              /* 枠線なし */
+    padding: 10px 20px;        /* 余白を調整 */
+    border-radius: 5px;        /* 角を丸く */
+    cursor: pointer;           /* ポインター表示 */
+    font-size: 2.4rem;
+    margin-right: 40px;
+}
