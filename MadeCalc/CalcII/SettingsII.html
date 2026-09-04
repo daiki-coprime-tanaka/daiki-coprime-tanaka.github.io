@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>計算トレーニング  設定</title>
+        <link rel="stylesheet" href="SettingsII.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <script src="SettingsII.js"></script>
+    <header>
+        <h1>計算トレーニング  設定画面</h1>
+    </header>
+    <main>
+        <p>問題数と難易度を<span class="buf">正の整数</span>で入力して下さい.</p>
+        <h2 id="tqty">問題数</h2>
+            <p>出題する問題の数です.</p>
+            <input type="text", id="qty", value="10">
+        <h2 id="tdif">難易度</h2>
+            <p>数字が大きいほど問題に現れる数が大きくなります. そのため, 問題が難しくなる傾向にあります.</p>
+            <input type="text", id="dif", value="10">
+            <p><button class="convDif" onclick="setDif(10)">簡単(10)</button>
+                <button class="convDif" onclick="setDif(100)">普通(100)</button>
+                <button class="convDif" onclick="setDif(1000)">難しい(1000)</button></p>
+        <h3>難易度の目安</h3>
+        <table>
+            <tr>
+                <!--<th>  </th>-->
+                <th>難易度の目安</th>
+                <th>主に出題される形式</th>
+            </tr>
+            <tr>
+                <!--<td>簡単</td>-->
+                <td>1～10</td>
+                <td>1桁±1桁, 1桁×1桁, 2桁÷1桁</td>
+            </tr>
+            <tr>
+                <!--<td>普通</td>-->
+                <td>11～100</td>
+                <td>2桁±2桁, 2桁×2桁, 4桁÷2桁</td>
+            </tr>
+            <tr>
+                <!--<td>難しい</td>-->
+                <td>101～1000</td>
+                <td>3桁±3桁, 3桁×3桁, 6桁÷3桁</td>
+            </tr>
+        </table>
+        <!--<a onclick="Start()", href="./CalcII.html">開始する</a>-->
+    </main>
+    <footer>
+        <p><button class="backTo" onclick="location.href='../Home.html'">ホーム画面に戻る</button>
+        <button class="play" onclick="location.href='./CalcII.html', Start()">開始する</button></p>
+    </footer>
+    </body>
+</html>
