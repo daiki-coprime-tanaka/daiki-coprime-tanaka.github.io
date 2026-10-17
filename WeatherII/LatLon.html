@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>地名から緯度・経度</title>
+        <link rel="stylesheet" href="LatLon.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <h1>地名から緯度・経度を求める</h1>
+        </header>
+        <main>
+            <p><label id="chimei" for="place">地名:</label><input type="text" id="place">
+            <button id="exec" onclick="exe()">検索</button></p>
+            <p><select id="candidate">
+                <option value="">候補を選択してください</option>
+            </select></p>
+            <p>緯度: <span id="latitude"></span></p>
+            <p>経度: <span id="longitude"></span></p>
+            <p>地名: <span id="address"></span></p>
+        </main>
+        <footer>
+        </footer>
+        <script src="./LatLon.js"></script>
+    </body>
+</html>
