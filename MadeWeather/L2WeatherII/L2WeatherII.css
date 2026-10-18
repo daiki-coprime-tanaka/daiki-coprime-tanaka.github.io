@@ -77,7 +77,99 @@ th, td {
 #week th{
     position: sticky;
     left: 0;
-    z-index: 2;   
+    z-index: 2;
+}
+
+th#date{
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+tr#d1{
+    th{
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        color: var(--d1-t);
+        background-color: var(--d1-b);
+    }
+    color: var(--d1-t);
+    background-color: var(--d1-b);
+}
+
+tr#d2{
+    th{
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        color: var(--d2-t);
+        background-color: var(--d2-b);
+    }
+    color: var(--d2-t);
+    background-color: var(--d2-b);
+}
+
+tr#d3{
+    th{
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        color: var(--d3-t);
+        background-color: var(--d3-b);
+    }
+    color: var(--d3-t);
+    background-color: var(--d3-b);
+}
+
+tr#d4{
+    th{
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        color: var(--d4-t);
+        background-color: var(--d4-b);
+    }
+    color: var(--d4-t);
+    background-color: var(--d4-b);
+}
+
+tr#d5{
+    th{
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        color: var(--d5-t);
+        background-color: var(--d5-b);
+    }
+    color: var(--d5-t);
+    background-color: var(--d5-b);
+}
+
+tr#d6{
+    th{
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        color: var(--d6-t);
+        background-color: var(--d6-b);
+    }
+    color: var(--d6-t);
+    background-color: var(--d6-b);
+}
+
+tr#d7{
+    th{
+        position: sticky;
+        left: 0;
+        z-index: 2;
+        color: var(--d7-t);
+        background-color: var(--d7-b);
+    }
+    color: var(--d7-t);
+    background-color: var(--d7-b);
 }
 
 #Current th{
@@ -126,39 +218,4 @@ input, select{
 
 #dtdat{
     color: var(--tdat-t);
-}
-
-#d1 {
-    color: var(--d1-t);
-    background-color: var(--d1-b);
-}
-
-#d2{
-    color: var(--d2-t);
-    background-color: var(--d2-b);
-}
-
-#d3{
-    color: var(--d3-t);
-    background-color: var(--d3-b);
-}
-
-#d4{
-    color: var(--d4-t);
-    background-color: var(--d4-b);
-}
-
-#d5{
-    color: var(--d5-t);
-    background-color: var(--d5-b);
-}
-
-#d6{
-    color: var(--d6-t);
-    background-color: var(--d6-b);
-}
-
-#d7{
-    color: var(--d7-t);
-    background-color: var(--d7-b);
 }

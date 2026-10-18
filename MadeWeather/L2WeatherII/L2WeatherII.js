@@ -271,7 +271,7 @@ function weather(latitude, longitude) {
     fetch(url)
         .then(res => res.json())
         .then(data => {
-            let wh = "<tr><th>日付</th><td>天気</td><td>湿度</td><td>降水確率</td><td>最高/最低気温</td><td>日の出</td><td>日の入り</td>";
+            let wh = "<tr><th id=\"date\">日付</th><td>天気</td><td>湿度</td><td>降水確率</td><td>最高/最低気温</td><td>日の出</td><td>日の入り</td></tr>";
             for(let roop = 0; roop < DAILY_DATA_QTYS; roop++) {
                 let cid = 'd' + (roop + 1);
                 let tid = '--d' + (roop + 1) + '-t';
