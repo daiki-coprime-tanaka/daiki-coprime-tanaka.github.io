@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>天気情報</title>
+        <link rel="stylesheet" href="weather.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body onload="init()">
+        <script src="weather.js"></script>
+        <header>
+            更新: <span id="weatTime"></span>
+        </header>
+        <main>
+            <h1>京都市の天気</h1>
+            <table>
+                <tr>
+                    <th>データ</th>
+                    <th>値</th>
+                </tr>
+                <tr>
+                    <td><span class="weat">天気</span></td>
+                    <td><span id="weather"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="weat">天気ID</span></td>
+                    <td><span id="weatID"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="weat">温度</span></td>
+                    <td><span id="temp"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="weat">湿度</span></td>
+                    <td><span id="humid"></span></td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

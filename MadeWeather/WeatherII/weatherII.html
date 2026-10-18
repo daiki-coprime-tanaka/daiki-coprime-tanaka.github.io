@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>天気情報</title>
+        <link rel="stylesheet" href="./weatherII.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body onload="weather(35.04860, 135.78045)">
+        <script src="./weatherII.js"></script>
+        <header>
+            更新: <span id="weatTime"></span>
+        </header>
+        <main>
+            <h1>天気情報(京都工芸繊維大学  松ケ崎キャンパス)</h1>
+            <h2>現在の天気</h2>
+            <div class="current">
+                <table id="Current">
+                    <tbody id="curb"></tbody>
+                </table>
+            </div>            
+            <h2>1時間ごとの天気(今日を含めて3日分)</h2>
+            <p><span id="dtod"></span></p>
+            <div class="hourly">
+                <table id="Today">
+                    <tbody id="todb"></tbody>
+                </table>
+            </div>
+            <p><span id="dtom"></span></p>
+            <div class="hourly">
+                <table id="Tomorrow">
+                    <tbody id="tomb"></tbody>
+                </table>
+            </div>
+            <p><span id="dtdat"></span></p>
+            <div class="hourly">
+                <table id="TheDayAfterTomorrow">
+                    <tbody id="tdatb"></tbody>
+                </table>
+            </div>
+            <h2>週間天気</h2>
+            <div class="daily">
+                <table id="week">
+                    <tbody id="tweek"></tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

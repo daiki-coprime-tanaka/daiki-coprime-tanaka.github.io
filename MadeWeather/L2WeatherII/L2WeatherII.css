@@ -1,0 +1,158 @@
+:root{
+    --today-t: #000000;
+    --tomorrow-t: #000000;
+    --tdat-t: #000000;
+    --d1-t: #000000;
+    --d1-b: #C0C0C0;
+    --d2-t: #000000;
+    --d2-b: #C0C0C0;
+    --d3-t: #000000;
+    --d3-b: #C0C0C0;
+    --d4-t: #000000;
+    --d4-b: #C0C0C0;
+    --d5-t: #000000;
+    --d5-b: #C0C0C0;
+    --d6-t: #000000;
+    --d6-b: #C0C0C0;
+    --d7-t: #000000;
+    --d7-b: #C0C0C0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.hourly{
+    overflow-x: auto;
+    /*padding: 10px;*/
+    border: 1px solid #999;
+}
+
+.hourly > table{
+    min-width: 3000px;
+}
+
+.hourly > table > tr > th{
+    min-width: 200px;
+}
+
+.daily{
+    overflow-x: auto;
+    overflow-y: auto;
+    /*padding: 10px;*/
+    border: 1px solid #999;
+}
+
+.daily > table{
+    min-width: 1200px;
+    min-height: 450px;
+}
+
+.daily > table > tr > th, .daily > table > tr > td{
+    min-width: 150px;
+    min-height: 50px;
+}
+
+table, th, td{
+    border:0.1rem solid#333;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 1.0rem; /* セル内の余白 */
+}
+
+#Today th, #Tomorrow th, #TheDayAfterTomorrow th{
+    position: sticky;
+    left: 0;
+    background: #C0C0C0;
+    z-index: 2;
+}
+
+#Current th{
+    background: #C0C0C0;
+}
+
+h1 {
+    color: #007bff;
+}
+
+h2{
+    color: #1989ff;
+}
+
+h3{
+    color: #3896ff;
+}
+
+button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #3896ff;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+button.Play {
+  /*ボタンを押したとき*/
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+input, select{
+    font-size: 2.4rem;
+}
+
+#dtod{
+    color: var(--today-t);
+}
+
+#dtom{
+    color: var(--tomorrow-t);
+}
+
+#dtdat{
+    color: var(--tdat-t);
+}
+
+#d1 {
+    color: var(--d1-t);
+    background-color: var(--d1-b);
+}
+
+#d2{
+    color: var(--d2-t);
+    background-color: var(--d2-b);
+}
+
+#d3{
+    color: var(--d3-t);
+    background-color: var(--d3-b);
+}
+
+#d4{
+    color: var(--d4-t);
+    background-color: var(--d4-b);
+}
+
+#d5{
+    color: var(--d5-t);
+    background-color: var(--d5-b);
+}
+
+#d6{
+    color: var(--d6-t);
+    background-color: var(--d6-b);
+}
+
+#d7{
+    color: var(--d7-t);
+    background-color: var(--d7-b);
+}

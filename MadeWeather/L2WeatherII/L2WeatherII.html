@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>天気情報</title>
+        <link rel="stylesheet" href="./L2WeatherII.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <h1><span id="add"></span></h1>
+            更新: <span id="weatTime"></span>
+        </header>
+        <main>
+            <script>
+                document.getElementById('add').innerHTML = "天気情報アプリ";
+            </script>
+            <h2>検索地点の選択</h2>
+            <p><label id="chimei" for="place">地名:</label><input type="text" id="place">
+            <button id="exec" onclick="exe()">検索</button></p>
+            <span id="status"></span>
+            <p><select id="candidate">
+                <option value="">候補を選択してください</option>
+            </select></p>
+            <p>緯度: <span id="latitude"></span></p>
+            <p>経度: <span id="longitude"></span></p>
+            <p>地名: <span id="address"></span></p>
+
+            <!--<button onclick="weather(35.00, 135.75)">test</button>-->
+            <h2>現在の天気</h2>
+            <div class="current">
+                <table id="Current">
+                    <tbody id="curb"></tbody>
+                </table>
+            </div>            
+            <h2>1時間ごとの天気(今日を含めて3日分)</h2>
+            <h3><span id="dtod"></span></h3>
+            <div class="hourly">
+                <table id="Today">
+                    <tbody id="todb"></tbody>
+                </table>
+            </div>
+            <h3><span id="dtom"></span></h3>
+            <div class="hourly">
+                <table id="Tomorrow">
+                    <tbody id="tomb"></tbody>
+                </table>
+            </div>
+            <h3><span id="dtdat"></span></h3>
+            <div class="hourly">
+                <table id="TheDayAfterTomorrow">
+                    <tbody id="tdatb"></tbody>
+                </table>
+            </div>
+            <h2>週間天気</h2>
+            <div class="daily">
+                <table id="week">
+                    <tbody id="tweek"></tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="./L2WeatherII.js"></script>
+    </body>
+</html>
