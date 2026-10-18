@@ -74,6 +74,12 @@ th, td {
     z-index: 2;
 }
 
+#week th{
+    position: sticky;
+    left: 0;
+    z-index: 2;   
+}
+
 #Current th{
     background: #C0C0C0;
 }
