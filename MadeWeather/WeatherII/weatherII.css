@@ -1,0 +1,66 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.hourly{
+    overflow-x: auto;
+    /*padding: 10px;*/
+    border: 1px solid #999;
+}
+
+.hourly > table{
+    min-width: 3000px;
+}
+
+.hourly > table > tr > th{
+    min-width: 200px;
+}
+
+.daily{
+    overflow-x: auto;
+    overflow-y: auto;
+    /*padding: 10px;*/
+    border: 1px solid #999;
+}
+
+.daily > table{
+    min-width: 1200px;
+    min-height: 450px;
+}
+
+.daily > table > tr > th, .daily > table > tr > td{
+    min-width: 150px;
+    min-height: 50px;
+}
+
+table, th, td{
+    border:0.1rem solid#333;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td {
+    padding: 1.0rem; /* セル内の余白 */
+}
+
+#Today th, #Tomorrow th, #TheDayAfterTomorrow th, #week th{
+    position: sticky;
+    left: 0;
+    background: #C0C0C0;
+    z-index: 2;
+}
+
+#Current th{
+    background: #C0C0C0;
+}
+
+/*#week td:first-child {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #C0C0C0;
+}*/
