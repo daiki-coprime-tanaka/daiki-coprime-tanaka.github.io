@@ -1,1 +1,41 @@
-
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>天気情報アプリへようこそ</title>
+        <link rel="stylesheet" href="./index.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <h1>天気情報アプリへようこそ</h1>
+        </header>
+        <main>
+            <h2>リリース版アプリ</h2>
+                <p class="desc">地名は日本国内のみ有効です.</p>
+                <p>2026年10月18日作成, 同日公開</p>
+                <p><button class="Proc" onclick="location.href='./L2WeatherII/L2WeatherII.html'">天気情報アプリを開く</button>
+                <button class="DL" onclick="downloadFile('./L2WeatherII/L2WeatherII.zip', 'L2WeatherII.zip')">天気情報アプリをダウンロードする(zip)</button></p>
+            <h2>試作品アプリ</h2>
+                <h3>初期版  下位天気情報アプリ</h3>
+                    <p class="desc">天気情報の取得位置が北緯35.00°, 東経135.75°に固定されており, 更新時点で最新の気象データ(天気, 気温, 湿度)を表示します.</p>
+                    <p>2026年５月15日作成, 2026年10月18日公開</p>
+                    <p><button class="Proc" onclick="location.href='./Weather/weather.html'">初期版  下位天気情報アプリを開く</button>
+                    <button class="DL" onclick="downloadFile('./Weather/weather.zip', 'weather.zip')">初期版  下位天気情報アプリをダウンロードする(zip)</button></p>
+                <h3>下位天気情報アプリ</h3>
+                    <p class="desc">天気情報の取得位置が北緯35.04860°, 東経135.78045°に固定されています.</p>
+                    <p>2026年10月17日作成, 2026年10月18日公開</p>
+                    <p><button class="Proc" onclick="location.href='./WeatherII/weatherII.html'">下位天気情報アプリを開く</button>
+                    <button class="DL" onclick="downloadFile('./WeatherII/weatherII.zip', 'WeatherII.zip')">下位天気情報アプリをダウンロードする(zip)</button></p>
+                <h3>緯度・経度取得アプリ</h3>
+                    <p class="desc">入力した地名の経度と緯度を表示します. 日本国内の地名のみ検索できます.</p>
+                    <p>2026年10月17日作成, 2026年10月18日公開</p>
+                    <p><button class="Proc" onclick="location.href='./LatLon/LatLon.html'">緯度・経度取得アプリを開く</button>
+                    <button class="DL" onclick="downloadFile('./LatLon/LatLon.zip', 'LatLon.zip')">緯度・経度取得アプリをダウンロードする(zip)</button></p>
+        </main>
+        <footer>
+            Created by daiki-coprime-tanaka on 18, Oct, 2026.
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+</html>

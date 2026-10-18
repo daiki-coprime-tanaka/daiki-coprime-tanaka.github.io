@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #0000ff;
+}
+
+h2 {
+    color: #1a1aff;
+}
+
+h3 {
+    color: #3434ff;
+}
+
+.desc{
+    color: #ff4d4d;
+}
+
+ul.dep0 >  li{
+    list-style-type:disc;
+}
+
+ul.dep1 > li{
+    list-style-type:square;
+}
+
+button.Proc {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #007bff;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+button.Proc:active {
+  /*ボタンを押したとき*/
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+button.DL {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #ff007b;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+
+button.DL:active {
+  /*ボタンを押したとき*/
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
