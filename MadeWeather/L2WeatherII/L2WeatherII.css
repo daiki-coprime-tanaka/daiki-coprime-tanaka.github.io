@@ -47,12 +47,27 @@ body {
     border: 1px solid #999;
 }
 
-.daily > table{
-    min-width: 1200px;
+/*.daily > table{
+    min-width: 600px;
     min-height: 450px;
 }
 
 .daily > table > tr > th, .daily > table > tr > td{
+    min-width: 75px;
+    min-height: 50px;
+}*/
+
+.daily > table{
+    min-width: 1000px;
+    min-height: 450px;
+}
+
+.daily > table > tbody > tr > th {
+    min-width: 150px;
+    min-height: 50px;
+}
+
+.daily > table > tbody > tr > td {
     min-width: 150px;
     min-height: 50px;
 }

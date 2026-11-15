@@ -193,6 +193,7 @@ function weather(latitude, longitude) {
         + "hourly=temperature_2m,weather_code,precipitation_probability,surface_pressure,relative_humidity_2m&timezone=Asia%2FTokyo&forecast_days=3&wind_speed_unit=m";*/
     // const url = ``;
     let url = `https://api.open-meteo.com/v1/forecast?latitude=${encodeURIComponent(latitude)}&longitude=${encodeURIComponent(longitude)}&current_weather=true&hourly=temperature_2m,apparent_temperature,weather_code,precipitation_probability,surface_pressure,relative_humidity_2m&timezone=Asia/Tokyo&forecast_days=3`.replace(/\s+/g, "");
+    // let url = `https://api.open-meteo.com/v1/forecast?latitude=${encodeURIComponent(latitude)}&longitude=${encodeURIComponent(longitude)}&current_weather=true&hourly=temperature_2m,apparent_temperature,weather_code,precipitation_probability,surface_pressure,relative_humidity_2m&timezone=Asia/Tokyo&forecast_days=3`.replace(/\s+/g, "");
     // 
     // alert(url);
     fetch(url)
