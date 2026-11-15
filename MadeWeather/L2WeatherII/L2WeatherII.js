@@ -192,7 +192,8 @@ function weather(latitude, longitude) {
         + "&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset&" 
         + "hourly=temperature_2m,weather_code,precipitation_probability,surface_pressure,relative_humidity_2m&timezone=Asia%2FTokyo&forecast_days=3&wind_speed_unit=m";*/
     // const url = ``;
-    let url = `https://api.open-meteo.com/v1/forecast?latitude=${encodeURIComponent(latitude)}&longitude=${encodeURIComponent(longitude)}&current_weather=true&hourly=temperature_2m,apparent_temperature,weather_code,precipitation_probability,surface_pressure,relative_humidity_2m&timezone=Asia/Tokyo&forecast_days=3`.replace(/\s+/g, "");
+    let url = `https://api.open-meteo.com/v1/forecast?latitude=` + `${encodeURIComponent(latitude)}` + `&longitude=` + `${encodeURIComponent(longitude)}` + `&current_weather=true&hourly=temperature_2m,apparent_temperature,weather_code,precipitation_probability,surface_pressure,relative_humidity_2m&timezone=Asia/Tokyo&forecast_days=3`;
+    url = url.replace(/\s+/g, "");
     // let url = `https://api.open-meteo.com/v1/forecast?latitude=${encodeURIComponent(latitude)}&longitude=${encodeURIComponent(longitude)}&current_weather=true&hourly=temperature_2m,apparent_temperature,weather_code,precipitation_probability,surface_pressure,relative_humidity_2m&timezone=Asia/Tokyo&forecast_days=3`.replace(/\s+/g, "");
     // 
     // alert(url);
